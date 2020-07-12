@@ -1,0 +1,177 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SparkFun-Boards:SPARKFUN_PRO_MICRO B1
+U 1 1 5ED2E1FD
+P 6500 2450
+F 0 "B1" H 6500 3360 45  0000 C CNN
+F 1 "SPARKFUN_PRO_MICRO" H 6500 3276 45  0000 C CNN
+F 2 "SPARKFUN_PRO_MICRO" H 6500 3250 20  0001 C CNN
+F 3 "" H 6500 2450 50  0001 C CNN
+F 4 "XXX-00000" H 6500 3181 60  0000 C CNN "Field4"
+	1    6500 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 1900 7150 1900
+Wire Wire Line
+	7150 2300 6950 2300
+Text Label 7150 1900 0    50   ~ 0
+VCC
+Wire Wire Line
+	7500 1900 7500 1600
+Wire Wire Line
+	7150 2400 7150 2300
+Text Label 7250 2400 0    50   ~ 0
+Data
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5ED346A6
+P 9900 2400
+F 0 "H1" H 10000 2446 50  0000 L CNN
+F 1 "MountingHole" H 10000 2355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 9900 2400 50  0001 C CNN
+F 3 "~" H 9900 2400 50  0001 C CNN
+	1    9900 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2100 5850 2100
+Text Label 6650 3300 0    50   ~ 0
+GND
+$Comp
+L Device:R R1
+U 1 1 5EDB08D6
+P 7150 2100
+F 0 "R1" H 7220 2146 50  0000 L CNN
+F 1 "4.7K" H 7220 2055 50  0000 L CNN
+F 2 "Resistors:0603" V 7080 2100 50  0001 C CNN
+F 3 "~" H 7150 2100 50  0001 C CNN
+	1    7150 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5EDB1569
+P 8750 2800
+F 0 "C1" H 8865 2846 50  0000 L CNN
+F 1 "100nF" H 8865 2755 50  0000 L CNN
+F 2 "Capacitors:0603" H 8788 2650 50  0001 C CNN
+F 3 "~" H 8750 2800 50  0001 C CNN
+	1    8750 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 3300 8750 2950
+Wire Wire Line
+	8750 2650 8750 1600
+Wire Wire Line
+	7150 2250 7150 2300
+Connection ~ 7150 2300
+Wire Wire Line
+	7150 1950 7150 1900
+Connection ~ 7150 1900
+Wire Wire Line
+	7150 1900 7500 1900
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 5EDB64CA
+P 5150 2300
+F 0 "J1" H 5258 2581 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 5258 2490 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5150 2300 50  0001 C CNN
+F 3 "~" H 5150 2300 50  0001 C CNN
+	1    5150 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2400 5600 2400
+Wire Wire Line
+	5600 2400 5600 1350
+Wire Wire Line
+	5600 1350 7150 1350
+Wire Wire Line
+	7150 1350 7150 1900
+Wire Wire Line
+	5850 2500 5350 2500
+Wire Wire Line
+	5850 2100 5850 2500
+Connection ~ 5850 2500
+Wire Wire Line
+	5850 2500 5850 3300
+Wire Wire Line
+	5350 2200 5950 2200
+Wire Wire Line
+	5950 2200 5950 2300
+Wire Wire Line
+	5950 2300 6050 2300
+Wire Wire Line
+	6050 2400 5750 2400
+Wire Wire Line
+	5750 2400 5750 2300
+Wire Wire Line
+	5750 2300 5350 2300
+$Comp
+L TEM-HUM-AM2302_4P-25.0X15.0MM_:TEM-HUM-AM2302(4P-25.0X15.0MM) U1
+U 1 1 5EDBB05C
+P 8300 1850
+F 0 "U1" H 8122 1804 50  0000 R CNN
+F 1 "TEM-HUM-AM2302(4P-25.0X15.0MM)" H 8122 1895 50  0000 R CNN
+F 2 "SNR4-2.54-25.0X15.0X7.0MM" H 8300 1850 50  0001 L BNN
+F 3 "AM2302" H 8300 1850 50  0001 L BNN
+	1    8300 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7500 1600 7800 1600
+Wire Wire Line
+	5850 3300 7900 3300
+Wire Wire Line
+	7150 2400 7700 2400
+Wire Wire Line
+	7700 2400 7700 1900
+Wire Wire Line
+	7700 1900 8000 1900
+Wire Wire Line
+	8000 1700 7900 1700
+Wire Wire Line
+	7900 1700 7900 3300
+Connection ~ 7900 3300
+Wire Wire Line
+	7900 3300 8750 3300
+Wire Wire Line
+	8000 2000 7800 2000
+Wire Wire Line
+	7800 2000 7800 1600
+Connection ~ 7800 1600
+Wire Wire Line
+	7800 1600 8750 1600
+Text Label 5500 2200 0    50   ~ 0
+SDA
+Text Label 5500 2300 0    50   ~ 0
+SCL
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5EDC4F9A
+P 9900 2650
+F 0 "H2" H 10000 2696 50  0000 L CNN
+F 1 "MountingHole" H 10000 2605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 9900 2650 50  0001 C CNN
+F 3 "~" H 9900 2650 50  0001 C CNN
+	1    9900 2650
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
